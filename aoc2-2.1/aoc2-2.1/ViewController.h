@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "friendFactory.h"
 
 @interface ViewController : UIViewController
 
