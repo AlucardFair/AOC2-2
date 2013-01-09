@@ -31,7 +31,7 @@
 -(void)calculateAttack
 {
     [self setTotalAttack:(attackDamagePerHit * (attackCombo * specialUse))];
-    NSLog(@"Your friends total attack will be %d.", self.totalAttack);
+    NSLog(@"Aeratify total attack will be %d.", self.totalAttack);
 }
 
 @end

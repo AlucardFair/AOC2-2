@@ -10,4 +10,10 @@
 
 @interface waterFriend : baseFriends
 
+// Data members for attackDamagePerHit, attackCombo and specialUse //
+@property float coldWeather;
+
+// Manipulation method override //
+-(void)calculateAttack;
+
 @end

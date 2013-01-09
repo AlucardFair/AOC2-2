@@ -10,4 +10,10 @@
 
 @interface fireFriend : baseFriends
 
+// Data members for attackDamagePerHit, attackCombo and specialUse //
+@property float weaponUse;
+
+// Manipulation method override //
+-(void)calculateAttack;
+
 @end
