@@ -18,8 +18,8 @@
 		311F5FC816A3116E009DA011 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F5FC716A3116E009DA011 /* Default-568h@2x.png */; };
 		311F5FCB16A3116E009DA011 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311F5FCA16A3116E009DA011 /* ViewController.m */; };
 		311F5FCE16A3116E009DA011 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311F5FCC16A3116E009DA011 /* ViewController.xib */; };
-		3135BE1E16A4B93200E4617F /* AOC2-2.2 Info Screen in Resources */ = {isa = PBXBuildFile; fileRef = 3135BE1D16A4B93200E4617F /* AOC2-2.2 Info Screen */; };
-		3135BE2516A4BFC900E4617F /* AOC2-2.2 Info Screen Exit Button in Resources */ = {isa = PBXBuildFile; fileRef = 3135BE2416A4BFC900E4617F /* AOC2-2.2 Info Screen Exit Button */; };
+		3135BE1E16A4B93200E4617F /* AOC2-2.2_Info_Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3135BE1D16A4B93200E4617F /* AOC2-2.2_Info_Screen.png */; };
+		3135BE2516A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3135BE2416A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png */; };
 		3149FE5F16A339F800ECF593 /* infoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3149FE5D16A339F800ECF593 /* infoView.m */; };
 		3149FE6016A339F800ECF593 /* infoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3149FE5E16A339F800ECF593 /* infoView.xib */; };
 /* End PBXBuildFile section */
@@ -41,8 +41,8 @@
 		311F5FC916A3116E009DA011 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		311F5FCA16A3116E009DA011 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		311F5FCD16A3116E009DA011 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		3135BE1D16A4B93200E4617F /* AOC2-2.2 Info Screen */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AOC2-2.2 Info Screen"; sourceTree = "<group>"; };
-		3135BE2416A4BFC900E4617F /* AOC2-2.2 Info Screen Exit Button */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AOC2-2.2 Info Screen Exit Button"; sourceTree = "<group>"; };
+		3135BE1D16A4B93200E4617F /* AOC2-2.2_Info_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AOC2-2.2_Info_Screen.png"; sourceTree = "<group>"; };
+		3135BE2416A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AOC2-2.2_Info_Screen_Exit_Button.png"; sourceTree = "<group>"; };
 		3149FE5C16A339F800ECF593 /* infoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoView.h; sourceTree = "<group>"; };
 		3149FE5D16A339F800ECF593 /* infoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoView.m; sourceTree = "<group>"; };
 		3149FE5E16A339F800ECF593 /* infoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoView.xib; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		311F5FB716A3116E009DA011 /* aoc2-2.2 */ = {
 			isa = PBXGroup;
 			children = (
-				3135BE2416A4BFC900E4617F /* AOC2-2.2 Info Screen Exit Button */,
-				3135BE1D16A4B93200E4617F /* AOC2-2.2 Info Screen */,
+				3135BE2416A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png */,
+				3135BE1D16A4B93200E4617F /* AOC2-2.2_Info_Screen.png */,
 				311F5FC016A3116E009DA011 /* AppDelegate.h */,
 				311F5FC116A3116E009DA011 /* AppDelegate.m */,
 				311F5FC916A3116E009DA011 /* ViewController.h */,
@@ -178,8 +178,8 @@
 				311F5FC816A3116E009DA011 /* Default-568h@2x.png in Resources */,
 				311F5FCE16A3116E009DA011 /* ViewController.xib in Resources */,
 				3149FE6016A339F800ECF593 /* infoView.xib in Resources */,
-				3135BE1E16A4B93200E4617F /* AOC2-2.2 Info Screen in Resources */,
-				3135BE2516A4BFC900E4617F /* AOC2-2.2 Info Screen Exit Button in Resources */,
+				3135BE1E16A4B93200E4617F /* AOC2-2.2_Info_Screen.png in Resources */,
+				3135BE2516A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
