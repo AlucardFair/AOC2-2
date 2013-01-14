@@ -7,12 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "infoView.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+-(IBAction)onInfo:(id)sender
+{
+    // Display infoView (Alloc and Init) //
+    infoView *infoController = [[infoView alloc] initWithNibName:@"infoView" bundle:nil];
+    if (infoController != nil)
+    {
+        // presentModalViewController is depreciated //
+        [self presentViewController:infoController animated:true completion:nil];
+    }
+}
 
 - (void)viewDidLoad
 {

@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface infoView : UIViewController
+{
+    IBOutlet UIButton *exitButton;
+}
+
+-(IBAction)onExit:(id)sender;
 
 @end

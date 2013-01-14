@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+}
+
+// Set IBAction for infoButton //
+-(IBAction)onInfo:(id)sender;
 
 @end

@@ -23,8 +23,19 @@
     return self;
 }
 
+// Set IBAction for exitButton //
+-(IBAction)onExit:(id)sender
+{
+    // Dismiss infoView //
+    // dismissModalViewController is depreciated //
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
 - (void)viewDidLoad
 {
+    // Set background color //
+    self.view.backgroundColor = [UIColor clearColor];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
