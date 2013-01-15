@@ -22,6 +22,11 @@
 		3135BE2516A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3135BE2416A4BFC900E4617F /* AOC2-2.2_Info_Screen_Exit_Button.png */; };
 		3149FE5F16A339F800ECF593 /* infoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3149FE5D16A339F800ECF593 /* infoView.m */; };
 		3149FE6016A339F800ECF593 /* infoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3149FE5E16A339F800ECF593 /* infoView.xib */; };
+		31DF655016A5EB0800166392 /* friendFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF654F16A5EB0800166392 /* friendFactory.m */; };
+		31DF655416A5EB1D00166392 /* baseFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF655316A5EB1D00166392 /* baseFriends.m */; };
+		31DF655716A5EB3400166392 /* airFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF655616A5EB3400166392 /* airFriend.m */; };
+		31DF655A16A5EB4200166392 /* fireFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF655916A5EB4200166392 /* fireFriend.m */; };
+		31DF655D16A5EB4E00166392 /* waterFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF655C16A5EB4D00166392 /* waterFriend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,16 @@
 		3149FE5C16A339F800ECF593 /* infoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoView.h; sourceTree = "<group>"; };
 		3149FE5D16A339F800ECF593 /* infoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoView.m; sourceTree = "<group>"; };
 		3149FE5E16A339F800ECF593 /* infoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoView.xib; sourceTree = "<group>"; };
+		31DF654E16A5EB0800166392 /* friendFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendFactory.h; sourceTree = "<group>"; };
+		31DF654F16A5EB0800166392 /* friendFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = friendFactory.m; sourceTree = "<group>"; };
+		31DF655216A5EB1D00166392 /* baseFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseFriends.h; sourceTree = "<group>"; };
+		31DF655316A5EB1D00166392 /* baseFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseFriends.m; sourceTree = "<group>"; };
+		31DF655516A5EB3400166392 /* airFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = airFriend.h; sourceTree = "<group>"; };
+		31DF655616A5EB3400166392 /* airFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = airFriend.m; sourceTree = "<group>"; };
+		31DF655816A5EB4200166392 /* fireFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fireFriend.h; sourceTree = "<group>"; };
+		31DF655916A5EB4200166392 /* fireFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fireFriend.m; sourceTree = "<group>"; };
+		31DF655B16A5EB4D00166392 /* waterFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waterFriend.h; sourceTree = "<group>"; };
+		31DF655C16A5EB4D00166392 /* waterFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = waterFriend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +118,16 @@
 				3149FE5C16A339F800ECF593 /* infoView.h */,
 				3149FE5D16A339F800ECF593 /* infoView.m */,
 				3149FE5E16A339F800ECF593 /* infoView.xib */,
+				31DF654E16A5EB0800166392 /* friendFactory.h */,
+				31DF654F16A5EB0800166392 /* friendFactory.m */,
+				31DF655216A5EB1D00166392 /* baseFriends.h */,
+				31DF655316A5EB1D00166392 /* baseFriends.m */,
+				31DF655516A5EB3400166392 /* airFriend.h */,
+				31DF655616A5EB3400166392 /* airFriend.m */,
+				31DF655816A5EB4200166392 /* fireFriend.h */,
+				31DF655916A5EB4200166392 /* fireFriend.m */,
+				31DF655B16A5EB4D00166392 /* waterFriend.h */,
+				31DF655C16A5EB4D00166392 /* waterFriend.m */,
 			);
 			path = "aoc2-2.2";
 			sourceTree = "<group>";
@@ -194,6 +219,11 @@
 				311F5FC216A3116E009DA011 /* AppDelegate.m in Sources */,
 				311F5FCB16A3116E009DA011 /* ViewController.m in Sources */,
 				3149FE5F16A339F800ECF593 /* infoView.m in Sources */,
+				31DF655016A5EB0800166392 /* friendFactory.m in Sources */,
+				31DF655416A5EB1D00166392 /* baseFriends.m in Sources */,
+				31DF655716A5EB3400166392 /* airFriend.m in Sources */,
+				31DF655A16A5EB4200166392 /* fireFriend.m in Sources */,
+				31DF655D16A5EB4E00166392 /* waterFriend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
