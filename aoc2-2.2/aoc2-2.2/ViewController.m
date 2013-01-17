@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad
 {
-//************************************** Default View **************************************//
+//************************************** Default View / Settings **************************************//
     
     // View Background Color //
     self.view.backgroundColor = [UIColor whiteColor];
@@ -139,30 +139,69 @@
 {
     if (friendNameTextField.text == @"Aeratify")
     {
-        // Clear TextField //
-        friendNameTextField.text = @"";
-        // Add Calculation to TextField //
-        friendNameTextField.text = @"Aeratify Calculation";
-        // Disable Calculate Critical Attack Button //
-        calculateCriticalAttackButton.enabled = false;
+//************************************** Call and Create an Air Friend **************************************//
+        airFriend *aeratify = (airFriend*)[friendFactory createFriend:AIR];
+        [aeratify setAttackDamagePerHit:3];
+        if (aeratify != nil)
+        {
+            NSLog(@"Aeratify has been created!");
+            // Check calculation //
+            [aeratify calculateAttack];
+            // Clear TextField //
+            friendNameTextField.text = @"";
+            // Grab the stepper value //
+            int luckSelected = luckStepperControl.value;
+            // Create the calculation //
+            int criticalAttack = ([aeratify totalAttack] * luckSelected);
+            // Add Calculation to TextField //
+            friendNameTextField.text = [NSString stringWithFormat:@"Aeratify's Critial Attack is %dhp", criticalAttack];
+            // Disable Calculate Critical Attack Button //
+            calculateCriticalAttackButton.enabled = false;
+        }
     }
     else if (friendNameTextField.text == @"Pyre")
     {
-        // Clear TextField //
-        friendNameTextField.text = @"";
-        // Add Calculation to TextField //
-        friendNameTextField.text = @"Pyre Calculation";
-        // Disable Calculate Critical Attack Button //
-        calculateCriticalAttackButton.enabled = false;
+//************************************** Call and Create an Fire Friend **************************************//
+        fireFriend *pyre = (fireFriend*)[friendFactory createFriend:FIRE];
+        [pyre setAttackDamagePerHit:9];
+        if (pyre != nil)
+        {
+            NSLog(@"Pyre has been created!");
+            // Check calculation //
+            [pyre calculateAttack];
+            // Clear TextField //
+            friendNameTextField.text = @"";
+            // Grab the stepper value //
+            int luckSelected = luckStepperControl.value;
+            // Create the calculation //
+            int criticalAttack = ([pyre totalAttack] * luckSelected);
+            // Add Calculation to TextField //
+            friendNameTextField.text = [NSString stringWithFormat:@"Pyre's Critial Attack is %dhp", criticalAttack];
+            // Disable Calculate Critical Attack Button //
+            calculateCriticalAttackButton.enabled = false;
+        }
     }
     else if (friendNameTextField.text == @"Aqueous")
     {
-        // Clear TextField //
-        friendNameTextField.text = @"";
-        // Add Calculation to TextField //
-        friendNameTextField.text = @"Aqueous Calculation";
-        // Disable Calculate Critical Attack Button //
-        calculateCriticalAttackButton.enabled = false;
+//************************************** Call and Create an Water Friend **************************************//
+        waterFriend *aqueous = (waterFriend*)[friendFactory createFriend:WATER];
+        [aqueous setAttackDamagePerHit:10];
+        if (aqueous != nil)
+        {
+            NSLog(@"Aqueous has been created!");
+            // Check calculation //
+            [aqueous calculateAttack];
+            // Clear TextField //
+            friendNameTextField.text = @"";
+            // Grab the stepper value //
+            int luckSelected = luckStepperControl.value;
+            // Create the calculation //
+            int criticalAttack = ([aqueous totalAttack] * luckSelected);
+            // Add Calculation to TextField //
+            friendNameTextField.text = [NSString stringWithFormat:@"Aqueous' Critial Attack is %dhp", criticalAttack];
+            // Disable Calculate Critical Attack Button //
+            calculateCriticalAttackButton.enabled = false;
+        }
     }
     else
     {
