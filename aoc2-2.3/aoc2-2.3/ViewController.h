@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "addEvent.h"
 
 @interface ViewController : UIViewController
+{
+    // Set IBOutlet for UITextView //
+    IBOutlet UITextView *eventTextView;
+    // Set IBOutlet for UIButton //
+    IBOutlet UIButton *addEventButton;
+}
+
+// Set IBaction for UIButton //
+-(IBAction)onClick:(id)sender;
 
 @end
