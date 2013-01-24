@@ -13,6 +13,8 @@
 @end
 
 @implementation addEvent
+// Set getters and setters //
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +27,16 @@
 
 - (void)viewDidLoad
 {
+    // Checking delegate - This is where my iss lies - I cannot seem to get it to become an object //
+    if (delegate != nil)
+    {
+        NSLog(@"Good");
+    }
+    else if (delegate == nil)
+    {
+        NSLog(@"You have a problem");
+    }
+    
     // Clear the error label //
     errorLabel.text = @"";
     
@@ -50,6 +62,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Set IBAction for all (three) UIButtons //
 -(IBAction)onClick:(id)sender
 {
     // Check to see which button is pressed //
@@ -70,19 +83,29 @@
             // Display errorLabel //
             errorLabel.text = @"Please enter an Event Name.";
         }
-        else
+        else 
         {
             // Make sure error label stays hidden //
             errorLabel.text = @"";
             
-            // Format Event Name //
-            
             // Format Date //
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            [dateFormat setDateFormat:@"EEE, MMM d, yyyy, h:mm a"];
+            
+            // Grab current date //
+            NSDate *currentDate = [NSDate date];
+            eventDateString = [dateFormat stringFromDate:currentDate];
+            
+            // Format Event Name //
+            NSString *eventInfoNameFormat = [NSString stringWithFormat:@"New Event: %@\n%@\n", eventTextField.text, eventDateString];
             
             // Add Info to ViewController textView //
+            [delegate showEventInfo:eventInfoNameFormat];
+            
+            NSLog(@"%@", eventInfoNameFormat);
             
             // Dismiss the view //
-            //[self dismissViewControllerAnimated:true completion:nil];
+            [self dismissViewControllerAnimated:true completion:nil];
         }
     }
     else

@@ -15,6 +15,8 @@
     IBOutlet UITextView *eventTextView;
     // Set IBOutlet for UIButton //
     IBOutlet UIButton *addEventButton;
+    
+    NSString *capturedEvent;
 }
 
 // Set IBaction for UIButton //
