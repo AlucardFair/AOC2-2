@@ -34,6 +34,8 @@
         addEvent *addEventViewController = [[addEvent alloc] initWithNibName:@"addEvent" bundle:nil];
         if (addEventViewController != nil)
         {
+            // Make addEvent the delegate //  <-- This is what I was missing to get it to work
+            addEventViewController.delegate = self;
             // Display addEvent //
             [self presentViewController:addEventViewController animated:true completion:nil];
         }

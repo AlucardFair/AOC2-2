@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Zachery Hernandez. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 // Custom Delegate //
 @protocol customDelegate <NSObject>
 
@@ -13,8 +15,6 @@
 -(void)showEventInfo:(NSString*)eventInfo;
 
 @end
-
-#import <UIKit/UIKit.h>
 
 @interface addEvent : UIViewController <UITextFieldDelegate>
 {
