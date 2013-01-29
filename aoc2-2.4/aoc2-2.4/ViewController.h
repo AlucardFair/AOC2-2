@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "addEvent.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <customDelegate>
+{
+    // Set IBOutlet for UITextView //
+    IBOutlet UITextView *eventTextView;
+    // Set IBOutlet for UILabel //
+    IBOutlet UILabel *swipeLabel;
+    // Set IBOutlet for UIButton //
+    IBOutlet UIButton *saveButton;
+    
+    // Set UISwipeGestureRecognizer //
+    UISwipeGestureRecognizer *swipeRight;
+}
+
+// Set IBAction for all UIButtons //
+-(IBAction)onClick:(id)sender;
 
 @end
