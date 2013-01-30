@@ -62,10 +62,12 @@
 {
     if (sender == cancelButton)
     {
+        // Dismiss addEvnet //
         [self dismissViewControllerAnimated:true completion:nil];
     }
     else if (sender == closeKeyboardButton)
     {
+        // Dismiss keyboard //
         [eventTextField resignFirstResponder];
     }
 }

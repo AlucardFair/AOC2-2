@@ -25,8 +25,10 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if (userDefaults != nil)
     {
-        // Load NSUserDefaults //
-        [userDefaults setObject:eventTextView.text forKey:@"userEvents"];
+        // Create NSString to pull the object for a certain key //
+        NSString *savedUserDefaults = [userDefaults objectForKey:@"userEvents"];
+        // Load NSUserDefaults to UITextView //
+        eventTextView.text = savedUserDefaults;
     }
     
     [super viewDidLoad];
@@ -48,7 +50,12 @@
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         if (userDefaults != nil)
         {
-            [userDefaults setObject:eventTextView.text forKey:@"userEvents"];
+            // Create NSString to save eventTextView.text //
+            NSString *savedString = eventTextView.text;
+            // Set key for object //
+            [userDefaults setObject:savedString forKey:@"userEvents"];
+            // Synchronize //
+            [userDefaults synchronize];
         }
     }
 }
@@ -61,7 +68,9 @@
         addEvent *addEventViewController = [[addEvent alloc] init];
         if (addEventViewController != nil)
         {
+            // Make addEvent the delegate //
             addEventViewController.delegate = self;
+            // Display addEvent //
             [self presentViewController:addEventViewController animated:true completion:nil];
         }
     }
